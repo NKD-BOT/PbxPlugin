@@ -1,9 +1,9 @@
 <h2 align="center">
-    「 ❣️ʙᴀᴅ ᴘʙxʙᴏᴛ ❣️ 」
+    「 ❣️𝐍𝐊𝐃 ᴘʙxʙᴏᴛ ❣️ 」
 </h2>
 <a href="https://youtu.be/0hP_JY_APq0?si=md6qsZQP2UaQ-SPn"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-<p align="center"><a href="https://t.me/ll_BAD_MUNDA_ll"><img src="https://telegra.ph/file/3df11bcade4a69a6335f2.jpg"></a></p>
+<p align="center"><a href="https://t.me/ytfarman"><img src="https://graph.org/file/99ba8ccb28d642c393a68.jpg"></a></p>
 
 <a href="https://youtu.be/0hP_JY_APq0?si=md6qsZQP2UaQ-SPn"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
