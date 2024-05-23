@@ -21,7 +21,7 @@ async def mediaInfo(_, message: Message):
         return await Pbxbot.delete(message, "Reply to a media file")
 
     media = message.reply_to_message.media
-    Pbx = await Pbxbot.edit(message, "Getting media info...")
+    Pbx = await 𝐍𝐊𝐃bot.edit(message, "Getting media info...")
 
     if media == MessageMediaType.ANIMATION:
         media_file = message.reply_to_message.animation
@@ -40,7 +40,7 @@ async def mediaInfo(_, message: Message):
 
     metadata = await get_metedata(media_file)
     if not metadata:
-        return await Pbxbot.delete(message, "Failed to get media info")
+        return await 𝐍𝐊𝐃bot.delete(message, "Failed to get media info")
 
     await Pbx.edit(f"Fetched metadata, now fetching extra mediainfo...")
 
@@ -52,7 +52,7 @@ async def mediaInfo(_, message: Message):
             progress_args=(Pbx, start_time, "⬇️ Downloading"),
         )
     except Exception:
-        return await Pbx.edit(
+        return await 𝐍𝐊𝐃.edit(
             f"**Failed to download media check the metadata instead!**\n\n{metadata}"
         )
 
@@ -64,7 +64,7 @@ async def mediaInfo(_, message: Message):
 
     await Pbx.edit(f"Uploading mediainfo to telegraph...")
 
-    to_paste = f"<h1>💫 PbxBot Media Info:</h1><br>{metadata}<br><b>📝 MediaInfo:</b><br><code>{out}</code>"
+    to_paste = f"<h1>💫 𝐍𝐊𝐃Bot Media Info:</h1><br>{metadata}<br><b>📝 MediaInfo:</b><br><code>{out}</code>"
     link = post_to_telegraph("PbxBotMediaInfo", to_paste)
 
     await Pbx.edit(f"**📌 Media Info:** [Here]({link})", disable_web_page_preview=True)
@@ -80,14 +80,14 @@ async def memify(_, message: Message):
         return await Pbxbot.delete(message, "Reply to a media file")
 
     start_time = time.time()
-    Pbx = await Pbxbot.edit(message, "Memifying...")
+    Pbx = await 𝐍𝐊𝐃bot.edit(message, "Memifying...")
     file = await message.reply_to_message.download(
         Config.DWL_DIR,
         progress=progress,
         progress_args=(Pbx, start_time, "⬇️ Downloading"),
     )
 
-    text = await Pbxbot.input(message)
+    text = await 𝐍𝐊𝐃bot.input(message)
     if ";" in text:
         upper_text, lower_text = text.split(";")
     else:
@@ -102,7 +102,7 @@ async def memify(_, message: Message):
         await Pbx.edit("Converting to image...")
         pic, status = await video_to_png(file, 0)
         if status == False:
-            return await Pbxbot.error(Pbx, pic)
+            return await 𝐍𝐊𝐃bot.error(Pbx, pic)
     else:
         return await Pbxbot.delete(message, "Unsupported media type")
 
@@ -125,7 +125,7 @@ async def memify(_, message: Message):
 @on_message("rename", allow_stan=True)
 async def renameMedia(_, message: Message):
     if not message.reply_to_message or not message.reply_to_message.media:
-        return await Pbxbot.delete(message, "Reply to a media file to rename it!")
+        return await 𝐍𝐊𝐃bot.delete(message, "Reply to a media file to rename it!")
 
     media = message.reply_to_message.media
     if media not in [
@@ -141,7 +141,7 @@ async def renameMedia(_, message: Message):
         return await Pbxbot.delete(message, "Unsupported media type!")
 
     if len(message.command) < 2:
-        return await Pbxbot.delete(
+        return await 𝐍𝐊𝐃bot.delete(
             message, "You need to provide a new filename with extention!"
         )
 
