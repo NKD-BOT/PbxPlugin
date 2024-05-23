@@ -246,7 +246,7 @@ async def help_close_cb(_, cb: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("⚜️ ᴅᴇᴘʟᴏʏ ⚜️ ", url="https://github.com/Badhacker98/PBX_2.0/fork"),
-                InlineKeyboardButton("", url="https://t.me/ll_BAD_MUNDA_ll"),
+                InlineKeyboardButton("", url="https://t.me/bot_nkd"),
             ],
             [
                 InlineKeyboardButton("🦋 𝐍𝐊𝐃 𝐁ᴏᴛ 𝐒ᴜᴘᴘᴏʀᴛ ❤️", url="https://t.me/bot_nkd"),
@@ -270,7 +270,7 @@ async def help_close_cb(_, cb: CallbackQuery):
             "__» Anyone pretending to be the developer of this bot and selling the code, is a scammer.__\n\n"
             "__» Please consider giving a star to the repository if you liked the project.__\n"
             "__» Feel free to contact us if you need any help regarding the source code.__\n\n"
-            "**❤️ @ll_THE_BAD_BOT_ll ❤️**",
+            "**❤️ @bot_nkd ❤️**",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
