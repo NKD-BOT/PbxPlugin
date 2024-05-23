@@ -50,7 +50,7 @@ async def setgpic(_, message: Message):
 
     status = await message.chat.set_photo(photo=message.reply_to_message.photo.file_id)
     if not status:
-        return await Pbxbot.delete(message, "𝖲𝗈𝗋𝗋𝗒, 𝗌𝗈𝗆𝖾𝗍𝗁𝗂𝗇𝗀 𝗐𝖾𝗇𝗍 𝗐𝗋𝗈𝗇𝗀.")
+        return await Nkdbot.delete(message, "𝖲𝗈𝗋𝗋𝗒, 𝗌𝗈𝗆𝖾𝗍𝗁𝗂𝗇𝗀 𝗐𝖾𝗇𝗍 𝗐𝗋𝗈𝗇𝗀.")
 
     await Pbxbot.delete(message, "𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 𝗌𝖾𝗍 𝗀𝗋𝗈𝗎𝗉 𝗉𝗋𝗈𝖿𝗂𝗅𝖾 𝗉𝗂𝖼𝗍𝗎𝗋𝖾.")
     await Pbxbot.check_and_log(
@@ -353,7 +353,7 @@ HelpMenu("groups").add(
     "setgusername",
     "<username>",
     "Set the group username.",
-    "setgusername ll_THE_BAD_BOT_ll",
+    "setgusername bot_nkd",
     "Only group owners can use this command. Give username without '@'.",
 ).add(
     "getglink", None, "Get the group invite link.", "getglink"
@@ -369,12 +369,12 @@ HelpMenu("groups").add(
     "chatadmins",
     "<chat id (optional)>",
     "Get the list of admins of mentioned chat.",
-    "chatadmins @ll_THE_BAD_BOT_ll",
+    "chatadmins @bot_nkd",
 ).add(
     "chatbots",
     "<chat id (optional)>",
     "Get the list of bots of mentioned chat.",
-    "chatbots @ll_THE_BAD_BOT_ll",
+    "chatbots @bot_nkd",
 ).add(
     "id",
     "<reply to message (optional)>",
@@ -384,7 +384,7 @@ HelpMenu("groups").add(
     "invite",
     "<username/id>",
     "Invite the mentioned user to this chat.",
-    "invite @II_BAD_MUNDA_II",
+    "invite @bot_nkd",
     "You can invite multiple users by giving their username/id separated by space.",
 ).info(
     "Group Menu"
