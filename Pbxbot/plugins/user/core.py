@@ -53,10 +53,10 @@ async def help(client: Client, message: Message):
 @on_message("repo", allow_stan=True)
 async def repo(_, message: Message):
     REPO_TEXT = (
-        "__🍀 𝖱𝖾𝗉𝗈:__ [Github](https://github.com/Badhacker98/PBX_2.0/fork)\n\n"
-        "__🍀 Updates:__ @PBX_NETWORK\n"
-        "__🍀 Support:__ @ll_THE_BAD_BOT_ll\n\n"
-        "**By ©️ @ll_THE_BAD_BOT_ll**"
+        "__🍀 𝖱𝖾𝗉𝗈:__ [Github](https://github.com/NKD-BOT/NKD-PBX_2.0/fork)\n\n"
+        "__🍀 Updates:__ @bot_nkd\n"
+        "__🍀 Support:__ @bot_nkd\n\n"
+        "**By ©️ @bot_nkd**"
     )
     await Pbxbot.edit(message, REPO_TEXT, no_link_preview=True)
 
