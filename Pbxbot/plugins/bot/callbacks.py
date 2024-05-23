@@ -11,7 +11,7 @@ from . import HELP_MSG, START_MSG, Config, Symbols, Pbxbot
 async def check_auth_click(cb: CallbackQuery) -> bool:
     if cb.from_user.id not in Config.AUTH_USERS:
         await cb.answer(
-            "You are not authorized to use this bot. \n\n</> @ll_THE_BAD_BOT_ll",
+            "You are not authorized to use this bot. \n\n</> @bot_nkd",
             show_alert=True,
         )
         return False
@@ -79,7 +79,7 @@ async def bot_help_cmd_cb(_, cb: CallbackQuery):
     result += (
         f"\n\n**{Symbols.arrow_right} 𝖣𝖾𝗌𝖼𝗋𝗂𝗉𝗍𝗂𝗈𝗇:** __{cmd_dict['description']}__"
     )
-    result += f"\n\n**<\> @ll_THE_BAD_BOT_ll ❤️**"
+    result += f"\n\n**<\> @bot_nkd ❤️**"
 
     buttons = [
         [
@@ -189,7 +189,7 @@ async def help_cmd_cb(_, cb: CallbackQuery):
     if cmd_dict["note"]:
         result += f"\n\n**{Symbols.arrow_right} 𝖭𝗈𝗍𝖾:** __{cmd_dict['note']}__"
 
-    result += f"\n\n**<\> @ll_THE_BAD_BOT_ll ❤️**"
+    result += f"\n\n**<\> @bot_nkd ❤️**"
 
     buttons = [
         [
@@ -249,14 +249,14 @@ async def help_close_cb(_, cb: CallbackQuery):
                 InlineKeyboardButton("", url="https://t.me/ll_BAD_MUNDA_ll"),
             ],
             [
-                InlineKeyboardButton("🦋 𝐏ʙx 𝐁ᴏᴛ 𝐒ᴜᴘᴘᴏʀᴛ ❤️", url="https://t.me/ll_THE_BAD_BOT_ll"),
+                InlineKeyboardButton("🦋 𝐍𝐊𝐃 𝐁ᴏᴛ 𝐒ᴜᴘᴘᴏʀᴛ ❤️", url="https://t.me/bot_nkd"),
             ],
             [
-                InlineKeyboardButton("⏤͟͟͞͞‌ٖ🥀➣Bᴀᴅ❤︎ ᴍᴜɴᴅᴀ ➻ >•⏤͟͟͞͞‌ٖٖٖ", url="https://t.me/ll_BAD_MUNDA_ll"),
+                InlineKeyboardButton("⏤͟͟͞͞‌ٖ🥀➣𝐍𝐊𝐃❤︎ ᴍᴜɴᴅᴀ ➻ >•⏤͟͟͞͞‌ٖٖٖ", url="https://t.me/bot_nkd"),
             ],
             [
-                InlineKeyboardButton("💥 sᴜᴘᴏᴏʀᴛ 💥", url="https://t.me/II_CHAT_HUB_II"),
-                InlineKeyboardButton("🖥️ Updates 💻", url="https://t.me/ll_THE_BAD_BOT_ll"),
+                InlineKeyboardButton("💥 sᴜᴘᴏᴏʀᴛ 💥", url="https://t.me/nkd_korean_group"),
+                InlineKeyboardButton("🖥️ Updates 💻", url="https://t.me/bot_nkd"),
             ],
             
             [
